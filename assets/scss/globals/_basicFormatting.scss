@@ -9,17 +9,26 @@ html {
 }
 
 body {
-    display: grid;
-    place-content: center;
-    margin: 0 auto;
     height: 100vh;
+    font-family: sans-serif;
+    color: #fff;
 }
 
 a {
     text-decoration: none;
-    // color: #fff;
+    color: #fff;
 }
 
 ul {
     list-style: none;
+}
+
+header.scroll {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 2rem 0 rgba(35, 38, 135, 0.10);
+    backdrop-filter: blur(1.25rem);
+}
+
+.header.scroll .nav-link {
+    color: #fff;
 }

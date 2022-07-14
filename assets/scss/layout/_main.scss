@@ -1,0 +1,30 @@
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: var(--gradient-blue-one);
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height: 660px;
+    
+        h1 {
+            font-size: 3.125rem;
+        }
+    
+        p {
+            text-align: center;
+            font-size: 1.5625rem;
+        }
+    }
+
+    .production {
+        width: 100%;
+        height: 800px;
+        background-color: red;
+    }
+}

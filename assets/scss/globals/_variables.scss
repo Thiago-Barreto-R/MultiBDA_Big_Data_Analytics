@@ -1,3 +1,23 @@
 :root {
-    
+   --primary-blue: #00ABDA;
+   --primary-purple: #502167;
+
+    --secondary-blue-one: #148DBC;
+    --secondary-blue-two: #00769A;
+    --secondary-blue-three: #22467E;
+
+    --secondary-purple-one: #462970;
+    --secondary-purple-two: #60347B;
+    --secondary-purple-three: #352862;
+
+    --gradient-blue-one: linear-gradient(to bottom, #00779D, #00ABDA);
+    --gradient-blue-two: linear-gradient(to right, #004481, #00ABDA);
+    --gradient-blue-three: linear-gradient(to right, #22467E, #00ABDA);
+
+    --gradient-mix-one: linear-gradient(to right, #60347B, #00ABDA);
+    --gradient-mix-two: linear-gradient(to right, #6F3482, #00ABDA);
+    --gradient-mix-three: linear-gradient(to right, #004481, #502167);
+    --gradient-mix-four: linear-gradient(to right, #00779D, #502167);
+
+    --white-bg: #fff;
 }
