@@ -12,6 +12,7 @@ body {
   height: 100vh;
   font-family: sans-serif;
   color: #fff;
+  background: var(--secondary-blue-three);
 }
 
 a {
@@ -33,6 +34,10 @@ header.scroll {
   color: #fff;
 }
 
+section a:hover {
+  text-decoration: underline;
+}
+
 :root {
   --primary-blue: #00ABDA;
   --primary-purple: #502167;
@@ -44,7 +49,7 @@ header.scroll {
   --secondary-purple-three: #352862;
   --gradient-blue-one: linear-gradient(to bottom, #00779D, #00ABDA);
   --gradient-blue-two: linear-gradient(to right, #004481, #00ABDA);
-  --gradient-blue-three: linear-gradient(to right, #22467E, #00ABDA);
+  --gradient-blue-three: linear-gradient(to left, #22467E, #00ABDA);
   --gradient-mix-one: linear-gradient(to right, #60347B, #00ABDA);
   --gradient-mix-two: linear-gradient(to right, #6F3482, #00ABDA);
   --gradient-mix-three: linear-gradient(to right, #004481, #502167);
@@ -75,7 +80,6 @@ header.scroll {
 .header .nav .nav-logo-text {
   font-size: 1.56rem;
   font-weight: 600;
-  line-height: 40px;
 }
 .header .nav .menu {
   display: flex;
@@ -133,7 +137,7 @@ header.scroll {
     display: block;
     position: absolute;
     right: 10%;
-    top: 0.2rem;
+    top: -0.2rem;
     z-index: 12;
   }
   .header .nav .mobile-menu .line1, .header .nav .mobile-menu .line3 {
@@ -173,11 +177,16 @@ header.scroll {
     transform: translateX(0);
   }
 }
+@media (max-width: 640px) {
+  .header .nav .nav-logo-text {
+    margin-left: -110px;
+    font-size: 1.3rem;
+  }
+}
 main {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background: var(--gradient-blue-one);
 }
 main .home {
   display: flex;
@@ -186,12 +195,14 @@ main .home {
   align-items: center;
   gap: 2rem;
   height: 660px;
+  background: var(--gradient-blue-one);
+  text-align: center;
+  padding: 1rem;
 }
 main .home h1 {
   font-size: 3.125rem;
 }
 main .home p {
-  text-align: center;
   font-size: 1.5625rem;
 }
 main .production {
@@ -201,7 +212,15 @@ main .production {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem;
   gap: 3rem;
+}
+main .production img {
+  width: 370px;
+  display: block;
+  height: 200px;
+  position: relative;
+  z-index: 1;
 }
 main .production .card {
   display: grid;
@@ -220,7 +239,15 @@ main .quality {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem;
   gap: 3rem;
+}
+main .quality img {
+  width: 370px;
+  display: block;
+  height: 200px;
+  position: relative;
+  z-index: 1;
 }
 main .quality .card {
   display: grid;
@@ -239,7 +266,15 @@ main .repair {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem;
   gap: 3rem;
+}
+main .repair img {
+  width: 370px;
+  display: block;
+  height: 200px;
+  position: relative;
+  z-index: 1;
 }
 main .repair .card {
   display: grid;
@@ -258,7 +293,15 @@ main .smt {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem;
   gap: 3rem;
+}
+main .smt img {
+  width: 370px;
+  display: block;
+  height: 200px;
+  position: relative;
+  z-index: 1;
 }
 main .smt .card {
   display: grid;
@@ -279,6 +322,7 @@ main .doubts {
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
+  text-align: center;
 }
 main .doubts h2 {
   font-size: 2.5125rem;
@@ -292,28 +336,60 @@ main .doubts a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+  .production {
+    flex-direction: column;
+    text-align: center;
+  }
+  .production img {
+    width: 200px;
+  }
+  .quality {
+    flex-direction: column;
+    text-align: center;
+  }
+  .quality img {
+    width: 200px;
+  }
+  .repair {
+    flex-direction: column;
+    text-align: center;
+  }
+  .repair img {
+    width: 200px;
+  }
+  .smt {
+    flex-direction: column;
+    text-align: center;
+  }
+  .smt img {
+    width: 200px;
+  }
+}
 footer {
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   background: var(--primary-purple);
-  height: 300px;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1.3rem;
 }
 footer span {
   display: inline-block;
   width: 30px;
 }
 footer h2 {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
 }
 footer a {
   text-decoration: underline;
 }
 footer p, footer a {
-  font-size: 1.5625rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

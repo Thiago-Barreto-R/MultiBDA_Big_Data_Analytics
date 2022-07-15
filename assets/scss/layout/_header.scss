@@ -20,7 +20,6 @@
         .nav-logo-text {
             font-size: 1.56rem;
             font-weight: 600;
-            line-height: 40px;
         }
         
         .menu {
@@ -92,7 +91,7 @@
                 display: block;
                 position: absolute;
                 right: 10%;
-                top: .2rem;
+                top: -.2rem;
                 z-index: 12;
 
                 .line1, .line3 {
@@ -134,5 +133,12 @@
                 transform: translateX(0);
             }
         }
+    }
+}
+
+@media (max-width: 640px) {
+    .header .nav .nav-logo-text {
+        margin-left: -110px;
+        font-size: 1.3rem;
     }
 }

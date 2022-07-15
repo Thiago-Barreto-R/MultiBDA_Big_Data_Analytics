@@ -59,7 +59,7 @@ class MobileNavbar {
       let scrollY = window.pageYOffset
       sections.forEach(current => {
           const sectionHeight = current.offsetHeight
-          const sectionTop = current.offsetTop - 40,
+          const sectionTop = current.offsetTop - 10,
           sectionId = current.getAttribute("id")
 
           if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -80,3 +80,26 @@ class MobileNavbar {
           header.classList.remove('scroll')
       }
   } )
+
+  const scrollReveal = ScrollReveal({
+    opacity: '0',
+    distance: '1px',
+    duration: 800,
+    reset: true
+});
+
+scrollReveal.reveal(`#home h1, #home p, 
+                     #production h2, #production p, 
+                     #quality h2, #quality p, 
+                     #repair h2, #repair p, 
+                     #smt h2, #smt p`, 
+                     { interval: 200})
+
+const scrollReveal2 = ScrollReveal({
+  origin: 'left',
+  distance: '2rem',
+  duration: 800,
+  reset: true
+});
+
+scrollReveal.reveal(`#production img, #quality img, #repair img, #smt img`)

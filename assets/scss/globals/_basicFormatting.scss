@@ -12,6 +12,7 @@ body {
     height: 100vh;
     font-family: sans-serif;
     color: #fff;
+    background: var(--secondary-blue-three);
 }
 
 a {
@@ -31,4 +32,10 @@ header.scroll {
 
 .header.scroll .nav-link {
     color: #fff;
+}
+
+section  a {
+    &:hover {
+        text-decoration: underline;
+    }
 }
