@@ -39,3 +39,20 @@ section  a {
         text-decoration: underline;
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-blue);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary-purple-three);
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
