@@ -8,23 +8,26 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-content: center;
     background-color: transparent;
     padding: 1rem 2rem;
     
-    .btn {
-        margin-left: -35rem;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
+    
     .title {
-        margin-left: 25rem;
         font-size: 3rem;
+    }
+}
+.btn {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    padding: .6rem .7rem;
+    background: var(--primary-blue);
+    border-radius: 50%;
+
+    &:hover {
+        text-decoration: underline;
     }
 }
 
@@ -34,10 +37,13 @@
     align-items: center;
     justify-content: space-around;
     padding: 1.1rem 4rem;
+    gap: 2rem;
 
     img {
         width: 600px;
+        min-width: 300px;
         height: 370px;
+        background-color: red;
     }
 
     .card {
@@ -74,5 +80,43 @@
 
     p, a {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .production__header {
+
+        .title {
+            font-size: 2rem;
+        }
+    }
+
+    .btn {
+        top: 15px;
+    }
+
+    .production__main {
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .btn {
+        top: 15px;
+    }
+
+    .production__footer{
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        p, a {
+            font-size: .9rem;
+        }
     }
 }

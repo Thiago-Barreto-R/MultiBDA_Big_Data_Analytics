@@ -115,7 +115,7 @@
                 overflow: hidden;
                 top: 0;
                 right: 0;
-                width: 50vw;
+                width: 80vw;
                 height: 100vh;
                 flex-direction: column;
                 justify-content: space-around;
@@ -138,7 +138,8 @@
 
 @media (max-width: 640px) {
     .header .nav .nav-logo-text {
-        margin-left: -110px;
-        font-size: 1.3rem;
+        margin-left: -130px;
+        font-size: .89rem;
+        font-weight: normal;
     }
 }

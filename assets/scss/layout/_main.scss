@@ -5,6 +5,7 @@ main {
     
     .home {
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -34,17 +35,13 @@ main {
         gap: 3rem;
     
         img {
-            width: 370px;
-            display: block;
+            width: 320px;
             height: 200px;
-            position: relative;
-            z-index: 1;
 
         }
         .card {
             display: grid;
             gap: 3rem;
-
 
             h2 {
                 font-size: 1.5625rem;
@@ -177,37 +174,100 @@ main {
     }
 }
 
-@media (max-width: 900px) {
-    .production {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 600px) {
+    main {
 
-        img {
-            width: 200px;
+        .home {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
         }
-    }
-    .quality {
-        flex-direction: column;
-        text-align: center;
 
-        img {
-            width: 200px;
+        .production {
+            flex-direction: column;
+            text-align: center;
+            
+            img {
+                width: 310px;
+            }
+
+            .card {
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
         }
-    }
-    .repair {
-        flex-direction: column;
-        text-align: center;
+        .quality {
+            flex-direction: column;
+            text-align: center;
+    
+            img {
+                width: 310px;
+            }
+            .card {
 
-        img {
-            width: 200px;
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
         }
-    }
-    .smt {
-        flex-direction: column;
-        text-align: center;
+        .repair {
+            flex-direction: column;
+            text-align: center;
+    
+            img {
+                width: 310px;
+            }
+            .card {
 
-        img {
-            width: 200px;
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+        .smt {
+            flex-direction: column;
+            text-align: center;
+    
+            img {
+                width: 310px;
+            }
+            .card {
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+        .doubts {
+    
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p, a {
+                font-size: 1rem;
+            }
         }
     }
 }
