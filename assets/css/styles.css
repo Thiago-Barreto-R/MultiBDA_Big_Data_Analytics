@@ -188,7 +188,7 @@ section a:hover {
     transition: transform 0.6s ease-in-out;
   }
   .header .nav .nav-item:first-child {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
   .header .nav .nav-list.show {
     transform: translateX(0);
