@@ -191,7 +191,7 @@ section a:hover {
     transition: transform 0.6s ease-in-out;
   }
   .header .nav .nav-item:first-child {
-    margin-top: -14rem;
+    margin-top: -8rem;
   }
   .header .nav .nav-list.show {
     transform: translateX(0);
