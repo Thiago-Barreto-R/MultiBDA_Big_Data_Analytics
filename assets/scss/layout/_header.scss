@@ -4,7 +4,9 @@
     left: 0;
     z-index: 10;
     width: 100%;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 2rem 0 rgba(35, 38, 135, 0.0);
+    backdrop-filter: blur(1.25rem);
     display: flex;
     justify-content: center;
     align-items: center;

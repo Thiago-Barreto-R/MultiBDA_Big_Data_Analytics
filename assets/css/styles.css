@@ -81,7 +81,9 @@ section a:hover {
   left: 0;
   z-index: 10;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 2rem 0 rgba(35, 38, 135, 0);
+  backdrop-filter: blur(1.25rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,32 +460,29 @@ footer p {
   background: var(--primary-purple);
   height: 100vh;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 .production__header {
   width: 100%;
   max-width: 1440px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 2rem 0 rgba(35, 38, 135, 0.1);
+  backdrop-filter: blur(1.25rem);
   margin: 0 auto;
   display: grid;
   place-content: center;
-  background-color: transparent;
   padding: 1rem 2rem;
 }
 .production__header .title {
   font-size: 3rem;
 }
-
-.btn {
+.production__header .btn {
   position: absolute;
   top: 25px;
   left: 10px;
   padding: 0.6rem 0.7rem;
   background: var(--primary-blue);
   border-radius: 50%;
-}
-.btn:hover {
-  text-decoration: underline;
 }
 
 .production__main {
@@ -496,9 +495,8 @@ footer p {
   gap: 2rem;
 }
 .production__main .img {
-  width: 600px;
-  min-width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 700px;
 }
 .production__main .card {
   display: flex;
@@ -532,11 +530,11 @@ footer p {
   font-size: 1rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .production__header .title {
     font-size: 2rem;
   }
-  .btn {
+  .production__header .btn {
     top: 15px;
   }
   .production__main {
@@ -545,7 +543,6 @@ footer p {
   }
   .production__main .img {
     width: 300px;
-    height: 300px;
   }
   .btn {
     top: 15px;
@@ -566,26 +563,24 @@ footer p {
 .quality__header {
   width: 100%;
   max-width: 1440px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 2rem 0 rgba(35, 38, 135, 0.1);
+  backdrop-filter: blur(1.25rem);
   margin: 0 auto;
   display: grid;
   place-content: center;
-  background-color: transparent;
   padding: 1rem 2rem;
 }
 .quality__header .title {
   font-size: 3rem;
 }
-
-.btn {
+.quality__header .btn {
   position: absolute;
   top: 25px;
   left: 10px;
   padding: 0.6rem 0.7rem;
   background: var(--primary-blue);
   border-radius: 50%;
-}
-.btn:hover {
-  text-decoration: underline;
 }
 
 .quality__main {
@@ -603,9 +598,8 @@ footer p {
   gap: 2rem;
 }
 .quality__main .flex .img {
-  width: 300px;
-  min-width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 600px;
 }
 .quality__main .flex .card {
   display: flex;
@@ -649,7 +643,7 @@ footer p {
   .quality__header .title {
     font-size: 2rem;
   }
-  .btn {
+  .quality__header .btn {
     top: 15px;
   }
   .quality__main .flex {
@@ -675,26 +669,24 @@ footer p {
 .repair__header {
   width: 100%;
   max-width: 1440px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 2rem 0 rgba(35, 38, 135, 0.1);
+  backdrop-filter: blur(1.25rem);
   margin: 0 auto;
   display: grid;
   place-content: center;
-  background-color: transparent;
   padding: 1rem 2rem;
 }
 .repair__header .title {
   font-size: 3rem;
 }
-
-.btn {
+.repair__header .btn {
   position: absolute;
   top: 25px;
   left: 10px;
   padding: 0.6rem 0.7rem;
   background: var(--primary-blue);
   border-radius: 50%;
-}
-.btn:hover {
-  text-decoration: underline;
 }
 
 .repair__main {
@@ -713,8 +705,7 @@ footer p {
 }
 .repair__main .flex .img {
   width: 100%;
-  min-width: 300px;
-  height: 300px;
+  max-width: 600px;
 }
 .repair__main .flex .card {
   display: flex;
@@ -758,7 +749,7 @@ footer p {
   .repair__header .title {
     font-size: 2rem;
   }
-  .btn {
+  .repair__header .btn {
     top: 15px;
   }
   .repair__main .flex {
@@ -790,26 +781,24 @@ footer p {
 .smt__header {
   width: 100%;
   max-width: 1440px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 2rem 0 rgba(35, 38, 135, 0.1);
+  backdrop-filter: blur(1.25rem);
   margin: 0 auto;
   display: grid;
   place-content: center;
-  background-color: transparent;
   padding: 1rem 2rem;
 }
 .smt__header .title {
   font-size: 3rem;
 }
-
-.btn {
+.smt__header .btn {
   position: absolute;
   top: 25px;
   left: 10px;
   padding: 0.6rem 0.7rem;
   background: var(--primary-blue);
   border-radius: 50%;
-}
-.btn:hover {
-  text-decoration: underline;
 }
 
 .smt__main {
@@ -822,9 +811,8 @@ footer p {
   gap: 2rem;
 }
 .smt__main .img {
-  width: 600px;
-  min-width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 600px;
 }
 .smt__main .card {
   display: flex;
@@ -858,11 +846,11 @@ footer p {
   font-size: 1rem;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 670px) {
   .smt__header .title {
     font-size: 2rem;
   }
-  .btn {
+  .smt__header .btn {
     top: 15px;
   }
   .smt__main {
@@ -871,7 +859,6 @@ footer p {
   }
   .smt__main .img {
     width: 300px;
-    height: 300px;
   }
   .smt__footer h2 {
     font-size: 1rem;

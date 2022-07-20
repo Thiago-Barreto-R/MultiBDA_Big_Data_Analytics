@@ -6,7 +6,7 @@
 
 ### Imagem do site
 
-<img src="assets/svg/siteOfc.svg" alt="Imagem inicial do site">
+<img src="assets/svg/site.svg" alt="Imagem inicial do site">
 
 ### Tecnologias
 
@@ -22,3 +22,5 @@
 Thiago Barreto R.
 
 Empresa: Multilaser Giga
+
+[MultiBDA - Big Data Analytics](https://thiago-barreto-r.github.io/MultiBDA_Big_Data_Analytics/)
